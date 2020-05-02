@@ -1,15 +1,18 @@
 Feature Requests:
-  ☐ Dragons
   ☐ This todo file syncs with all todos and fixmes accross the project and with an online db like trello so that teams and communities can interface with it and is linked in your footer.
+  ☐ Project highlight pages
+  ☐ Beautify dribbble and behance 
+  ☐ Linked in formatting
 
-Todo:
-  ☐ Thing 1
-  ☐ Thing 2 @started(20-05-02 02:12)
+Todos:
+  ☐ Hero @started(20-05-02 11:02)
+  ☐ Introduction
+  ☐ Works
+  ☐ Labs
+  ☐ Testimonials
+  ☐ Header
+  ☐ Footer
 
-Bug:
-  ☐ Bug 1 @critical 
-  ☐ Bug 2 @1h
+Bugs:
 
 Done:
-  ✘ Thing 0 @cancelled(20-05-02 02:12)
-  ✔ Bug 0 @done(20-05-02 02:12)

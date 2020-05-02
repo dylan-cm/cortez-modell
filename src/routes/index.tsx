@@ -1,25 +1,31 @@
-import React, { lazy, Suspense } from "react";
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import ErrorPage from "../pages/ErrorPage";
-import Loading from "../pages/Loading";
+import React, { lazy, Suspense } from 'react'
+import { Router, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 
-const App = lazy(() => import("../pages/App"));
+import { ThemeProvider } from 'emotion-theming'
+import { theme } from '../styles'
 
-export const history = createBrowserHistory();
+import ErrorPage from '../pages/ErrorPage'
+import Loading from '../pages/Loading'
+
+const Home = lazy(() => import('../pages/Home'))
+
+export const history = createBrowserHistory()
 
 function Routes() {
   return (
     <Router history={history}>
-      <ErrorPage>
-        <Suspense fallback={<Loading />}>
-          <Switch>
-            <Route path="/" component={App} />
-          </Switch>
-        </Suspense>
-      </ErrorPage>
+      <ThemeProvider theme={theme}>
+        <ErrorPage>
+          <Suspense fallback={<Loading />}>
+            <Switch>
+              <Route path="/" component={Home} />
+            </Switch>
+          </Suspense>
+        </ErrorPage>
+      </ThemeProvider>
     </Router>
-  );
+  )
 }
 
-export default Routes;
+export default Routes
