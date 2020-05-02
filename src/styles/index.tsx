@@ -1,22 +1,15 @@
 import { keyframes } from '@emotion/core'
-// import styled from '@emotion/styled'
-export interface Theme {
-  color: {
-    [key: string]: string | number
-  }
-  layout: {
-    [key: string]: string | number
-  }
-  text: {
-    [key: string]: string | number
-  }
-}
+import { Theme } from './styled'
 
 export const theme: Theme = {
   color: {
     primary: '#7511F7',
+    positive: '#141D3A',
+    negative: '#fff',
   },
-  layout: {},
+  layout: {
+    headerHeightDesktop: '115px;',
+  },
   text: {},
 }
 

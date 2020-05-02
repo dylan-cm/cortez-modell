@@ -1,12 +1,15 @@
 import styled, { CreateStyled } from '@emotion/styled'
 
-type Theme = {
+export interface Theme {
   color: {
-    primary: string
-    positive: string
-    negative: string
+    [key: string]: string | number
   }
-  // ...
+  layout: {
+    [key: string]: string | number
+  }
+  text: {
+    [key: string]: string | number
+  }
 }
 
 export default styled as CreateStyled<Theme>

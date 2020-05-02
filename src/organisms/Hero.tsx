@@ -11,7 +11,8 @@ S.Hero = styled.div`
   justify-content: space-between;
   align-items: stretch;
 
-  min-height: 100vh;
+  min-height: Calc(100vh - 115px);
+    /* ${(props) => props.theme.layout.headerHeightDesktop}); */
 
   div {
     display: flex;
@@ -22,16 +23,20 @@ S.Hero = styled.div`
   }
 
   h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 16px;
   }
   h3 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 48px;
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif
   }
 
   div.bottomBar {
-    min-height: 40px;
+    min-height: 24px;
     max-height: 5vh;
     width: 100%;
     background-color: ${(props) => props.theme.color.primary};
@@ -40,17 +45,21 @@ S.Hero = styled.div`
   #hero-illustration {
     margin-bottom: -4px;
   }
+
+  div.hero-body{
+    padding: 32px;
+  }
 `
 
 function Hero() {
   return (
     <S.Hero>
-      <div>
-        <h1>Designer, Full-Stack Developer, Consultant</h1>
+      <div className="hero-body">
+        <h1>Designer, Full-Stack Developer & Consultant</h1>
         <h3>I design and build simply useful things, and I love what I do.</h3>
+        {/* Headshot */}
+        <img src={headshot} alt="headshot" />
       </div>
-      {/* Headshot */}
-      <img src={headshot} alt="headshot" />
       <div>
         {/* Illustration */}
         <img src={illustration} alt="headshot" id="hero-illustration" />

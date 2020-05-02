@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import styled from '@emotion/styled'
+import styled from '../styles/styled'
 import * as Styles from '../styles'
 
 import Hero from '../organisms/Hero'
@@ -16,6 +16,10 @@ S.Container = styled.div`
 
   min-height: 100vh;
   width: 100vw;
+
+  padding-top: ${(props) => props.theme.layout.headerHeightDesktop};
+
+  color: ${(props) => props.theme.color.positive};
 `
 
 interface PropTypes {
