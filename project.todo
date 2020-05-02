@@ -5,8 +5,7 @@ Feature Requests:
   ☐ Linked in formatting
 
 Todos:
-  ☐ Introduction
-  ☐ Works
+  ☐ Works @started(20-05-02 14:37)
   ☐ Labs
   ☐ Testimonials
   ☐ Footer
@@ -16,3 +15,4 @@ Bugs:
 Done:
   ✔ Hero @started(20-05-02 11:02) @done(20-05-02 12:03) @lasted(1h1m23s)
   ✔ Header @started(20-05-02 12:06) @done(20-05-02 13:10) @lasted(1h4m5s)
+  ✔ Introduction @started(20-05-02 13:11) @done(20-05-02 14:37) @lasted(1h26m36s)
