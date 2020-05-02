@@ -1,0 +1,15 @@
+Feature Requests:
+  ☐ Dragons
+  ☐ This todo file syncs with all todos and fixmes accross the project and with an online db like trello so that teams and communities can interface with it and is linked in your footer.
+
+Todo:
+  ☐ Thing 1
+  ☐ Thing 2 @started(20-05-02 02:12)
+
+Bug:
+  ☐ Bug 1 @critical 
+  ☐ Bug 2 @1h
+
+Done:
+  ✘ Thing 0 @cancelled(20-05-02 02:12)
+  ✔ Bug 0 @done(20-05-02 02:12)

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import styled from "@emotion/styled";
-import * as Styles from "../styles";
-import logo from "../assets/logo.svg";
-import { incrementIfOdd, increment, decrement } from "../redux/actions/counter";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import styled from '@emotion/styled'
+import * as Styles from '../styles'
+import logo from '../assets/logo.svg'
+import { incrementIfOdd, increment, decrement } from '../redux/actions/counter'
 
-const S: Styles.Component = Styles;
+const S: Styles.Component = Styles
 S.Container = styled.div`
   text-align: center;
 
@@ -41,18 +41,19 @@ S.Container = styled.div`
       padding: 0 16px;
     }
   }
-`;
+`
 
 interface PropTypes {
-  counter: number;
-  incrementIfOdd: () => void;
-  increment: () => void;
-  decrement: () => void;
+  counter: number
+  incrementIfOdd: () => void
+  increment: () => void
+  decrement: () => void
 }
 
 class App extends Component<PropTypes> {
+  //TODO: customize
   render() {
-    const { counter, incrementIfOdd, increment, decrement } = this.props;
+    const { counter, incrementIfOdd, increment, decrement } = this.props
     return (
       <S.Container>
         <header className="App-header">
@@ -60,12 +61,7 @@ class App extends Component<PropTypes> {
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Learn React
           </a>
           <div className="row">
@@ -76,26 +72,26 @@ class App extends Component<PropTypes> {
           <button onClick={incrementIfOdd}>Increment If Odd</button>
         </header>
       </S.Container>
-    );
+    )
   }
 }
 
 interface StateType {
-  counter: number;
-  [key: string]: any;
+  counter: number
+  [key: string]: any
 }
 
 const mapStateToProps = (state: StateType) => {
   return {
     counter: state.counter,
-  };
-};
+  }
+}
 
 const mapDispatchToProps = {
   incrementIfOdd,
   increment,
   decrement,
-};
-///////////SWITCH TO HOOKS API AND FUNCTIONAL COMPONENTS
+}
+//TODO: SWITCH TO HOOKS API AND FUNCTIONAL COMPONENTS
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App)
