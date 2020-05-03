@@ -5,6 +5,7 @@ import * as Styles from '../styles'
 
 import Hero from '../organisms/Hero'
 import Introduction from '../organisms/Introduction'
+import Works from '../organisms/Works'
 
 import { incrementIfOdd, increment, decrement } from '../redux/actions/counter'
 
@@ -37,6 +38,7 @@ class Home extends Component<PropTypes> {
       <S.Container>
         <Hero />
         <Introduction />
+        <Works />
       </S.Container>
     )
   }

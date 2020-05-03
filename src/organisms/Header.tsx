@@ -2,6 +2,7 @@ import React from 'react'
 import styled from '../styles/styled'
 import * as Styles from '../styles'
 import { ReactComponent as Logo } from '../assets/logo.svg'
+import OutlinedButton from '../atoms/OutlinedButton'
 
 const S: Styles.Component = Styles
 S.Header = styled.div`
@@ -17,24 +18,6 @@ S.Header = styled.div`
 
   padding: 16px 48px;
   box-sizing: border-box;
-
-  button.outline {
-    padding: 8px 18px;
-    border-radius: 100px;
-    border: 2px solid ${(props) => props.theme.color.primary};
-    font-size: 1.15rem;
-    min-width: 44px;
-    color: ${(props) => props.theme.color.primary};
-    font-family: 'eurostile', sans-serif;
-    font-weight: 400;
-    cursor: pointer;
-    transition: 250ms;
-
-    &:hover {
-      color: ${(props) => props.theme.color.negative};
-      background-color: ${(props) => props.theme.color.primary};
-    }
-  }
 
   .logo {
     height: 60%;
@@ -66,7 +49,7 @@ function Header() {
         {/* Logo */}
         <Logo className="logo" />
         {/* Contact */}
-        <button className="outline">Say Hello</button>
+        <OutlinedButton children="Say Hello" onClick={() => window.open('mailto:dylan@cortez-modell.com')} />
       </div>
     </S.Header>
   )

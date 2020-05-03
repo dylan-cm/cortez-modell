@@ -47,15 +47,6 @@ S.Introduction = styled.div`
     font-style: normal;
   }
 
-  p {
-    max-width: 800px;
-    font-size: 1rem;
-    font-family: itc-avant-garde-gothic-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin: 12px 0;
-  }
-
   div.intro-text {
     color: ${(props) => props.theme.color.negative};
     text-align: center;
@@ -85,10 +76,10 @@ S.Introduction = styled.div`
     border: 1px solid #eee;
     border-radius: 10px;
 
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 
     padding: 48px 48px;
-    margin: 100px 16px;
+    margin: 124px 16px;
 
     div.column {
       display: flex;
