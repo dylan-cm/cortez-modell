@@ -56,6 +56,7 @@ S.Hero = styled.div`
     width: 240px;
   }
   .pattern-wrapper {
+    z-index: -1;
     margin: -10%;
     position: absolute;
     width: 110%;
