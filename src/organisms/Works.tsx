@@ -121,7 +121,7 @@ function Works() {
           <img src={greenc} alt="GreenConsultants.com" className="thumbnail" />
           <div className="overlay">
             <h3>Green technology experts helping forward thinking companies for over 20 years.</h3>
-            <OutlinedButton onClick={() => window.open('https://www.greenconsultants.com')} end={true} transparent>
+            <OutlinedButton onClick={() => window.open('http://www.greenconsultants.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
