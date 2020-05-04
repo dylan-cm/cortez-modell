@@ -5,6 +5,8 @@ import OutlinedButton from '../atoms/OutlinedButton'
 import { ReactComponent as GithubLogo } from '../assets/github.svg'
 import { ReactComponent as Chevron } from '../assets/chevron.svg'
 import freeps from '../assets/freeps.png'
+import greenc from '../assets/greenc.png'
+import runestone from '../assets/runestone.png'
 
 const S: Styles.Component = Styles
 S.Works = styled.div`
@@ -98,28 +100,28 @@ function Works() {
         <div className="grid-item">
           <img src={freeps} alt="FreePeoples.com" className="thumbnail" />
           <div className="overlay">
-            <h4>Yo</h4>
-            <OutlinedButton onClick={() => window.open('www.freepeoples.com')} end transparent>
+            <h4>Bringing world music and rock n' roll to San Francisco for over 15 years.</h4>
+            <OutlinedButton onClick={() => window.open('www.freepeoples.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
           </div>
         </div>
         <div className="grid-item">
-          <img src={freeps} alt="Rune-Stone.com" className="thumbnail" />
+          <img src={runestone} alt="Rune-Stone.com" className="thumbnail" />
           <div className="overlay">
-            <h4>Yo</h4>
-            <OutlinedButton onClick={() => window.open('www.rune-stone.com')} end transparent>
+            <h3>Creative first gamers building high end tools for the League of Legends community.</h3>
+            <OutlinedButton onClick={() => window.open('www.rune-stone.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
           </div>
         </div>
         <div className="grid-item">
-          <img src={freeps} alt="GreenConsultants.com" className="thumbnail" />
+          <img src={greenc} alt="GreenConsultants.com" className="thumbnail" />
           <div className="overlay">
-            <h4>Yo</h4>
-            <OutlinedButton onClick={() => window.open('www.greenconsultants.com')} end transparent>
+            <h3>Green technology experts helping forward thinking companies for over 20 years.</h3>
+            <OutlinedButton onClick={() => window.open('www.greenconsultants.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
