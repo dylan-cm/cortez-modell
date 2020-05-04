@@ -124,7 +124,7 @@ function Works() {
       {/* Link to dribbble */}
       {/* TODO: link to my profile */}
       {/* TODO: link to my behance */}
-      <OutlinedButton onClick={() => window.open('www.google.com')}>
+      <OutlinedButton onClick={() => window.open('www.google.com')} start>
         <GithubLogo />
         See more on GitHub
       </OutlinedButton>

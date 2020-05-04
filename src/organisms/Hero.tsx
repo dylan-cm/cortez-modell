@@ -3,6 +3,8 @@ import styled from '../styles/styled'
 import * as Styles from '../styles'
 import headshot from '../assets/headshot.svg'
 import illustration from '../assets/illustration.svg'
+import dmc from '../assets/dmc.svg'
+import AnimatedCursor from '../atoms/AnimatedCursor'
 
 const S: Styles.Component = Styles
 S.Hero = styled.div`
@@ -18,7 +20,7 @@ S.Hero = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     text-align: center;
   }
 
@@ -44,21 +46,47 @@ S.Hero = styled.div`
 
   #hero-illustration {
     margin-bottom: -4px;
+    height: 260px;
   }
 
   div.hero-body{
     padding: 32px;
+  }
+
+  .headshot{
+    width: 240px;
+  }
+  .pattern-wrapper{
+    margin: -10%;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    overflow: hidden;
+  }
+  .pattern{
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    z-index: -10;
+    background: url(${dmc});
+    background-repeat: repeat;
+    background-size: 10%;
+    fill: ${(props) => props.theme.color.primary};
   }
 `
 
 function Hero() {
   return (
     <S.Hero>
+      <div className="pattern-wrapper">
+        <div className="pattern" />
+        <AnimatedCursor />
+      </div>
       <div className="hero-body">
         <h1>Designer, Full-Stack Developer & Consultant</h1>
         <h3>I design and build simply useful things, and I love what I do.</h3>
         {/* Headshot */}
-        <img src={headshot} alt="headshot" />
+        <img src={headshot} alt="headshot" className="headshot" />
       </div>
       <div>
         {/* Illustration */}

@@ -3,9 +3,9 @@ import { Theme } from './styled'
 
 export const theme: Theme = {
   color: {
-    primary: '#7511F7',
-    positive: '#141D3A',
-    negative: '#fff',
+    primary: '#F25A38',
+    positive: '#080521',
+    negative: '#FBF0EE',
   },
   layout: {
     headerHeightDesktop: '115px;',

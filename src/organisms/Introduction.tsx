@@ -61,7 +61,7 @@ S.Introduction = styled.div`
     z-index: -1;
     position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 640px;
     background: ${(props) => props.theme.color.primary};
   }
 
@@ -92,8 +92,13 @@ S.Introduction = styled.div`
 
     div.divider {
       width: 1px;
-      background: #eee;
+      background: #b3a9b0;
     }
+  }
+
+  .icon {
+    height: 48px;
+    margin-bottom: 24px;
   }
 `
 
@@ -112,7 +117,7 @@ function Introduction() {
       </div>
       <div className="column-card">
         <div className="column">
-          <Designer />
+          <Designer className="icon" />
           <h4>Designer</h4>
           <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
           <h5>Things I enjoy designing:</h5>
@@ -129,7 +134,7 @@ function Introduction() {
         </div>
         <div className="divider" />
         <div className="column">
-          <FrontEnd />
+          <FrontEnd className="icon" />
           <h4>Developer</h4>
           <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
           <h5>Things I enjoy designing:</h5>
@@ -146,7 +151,7 @@ function Introduction() {
         </div>
         <div className="divider" />
         <div className="column">
-          <Mentor />
+          <Mentor className="icon" />
           <h4>Consultant</h4>
           <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
           <h5>Things I enjoy designing:</h5>
