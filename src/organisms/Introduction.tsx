@@ -81,9 +81,13 @@ S.Introduction = styled.div`
 
     padding: 48px 48px;
     margin: 124px 16px;
+    box-sizing: border-box;
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
+    }
+    @media screen and (max-width: 275px) {
+      padding: 16px;
     }
 
     div.column {
@@ -93,6 +97,7 @@ S.Introduction = styled.div`
       align-items: center;
       text-align: center;
       padding: 0 16px;
+      box-sizing: border-box;
     }
 
     div.divider {

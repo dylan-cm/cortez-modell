@@ -30,6 +30,9 @@ S.Footer = styled.div`
     font-weight: 400;
     margin: 0;
     padding: 4px 32px;
+    @media screen and (max-width: 1020px) {
+      padding: 0px;
+    }
   }
 
   h5 {
@@ -57,7 +60,7 @@ S.Footer = styled.div`
     margin-top: 132px;
     padding-bottom: 100px;
     width: 100%;
-    height: 60vh;
+    height: 700px;
     background: ${(props) => props.theme.color.primary};
   }
 
@@ -110,6 +113,17 @@ S.Footer = styled.div`
     .spaced-out {
       margin: 48px 8px;
     }
+    @media screen and (max-width: 275px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      .spaced-out {
+        margin: 8px;
+      }
+    }
+  }
+
+  .quote {
+    max-width: 350px;
   }
 `
 
@@ -129,11 +143,9 @@ function Footer() {
         </OutlinedButton>
       </div>
       <Logo className="logo" />
-      <h4>
-        Living, learning, & leveling up
-        <br />
-        one day at a time.
-      </h4>
+      <div className="quote">
+        <h4>Living, learning, & leveling up one day at a time.</h4>
+      </div>
       <div className="row">
         {/* TODO: add links */}
         <OutlinedButton

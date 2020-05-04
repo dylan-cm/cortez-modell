@@ -84,7 +84,17 @@ S.Hero = styled.div`
         max-width: 80%;
         height: auto;
       }
+  }
+  @media screen and (max-width: 500px) {
+    .headshot{
+      max-width: 80%;
     }
+  }
+  @media screen and (max-width: 275px) {
+    h1{
+      font-size: 2rem;
+    }
+  }
 `
 
 function Hero() {
