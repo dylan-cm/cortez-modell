@@ -48,6 +48,10 @@ S.Introduction = styled.div`
     font-style: normal;
   }
 
+  p {
+    margin: 6px 0;
+  }
+
   div.intro-text {
     color: ${(props) => props.theme.color.negative};
     text-align: center;
@@ -139,48 +143,47 @@ function Introduction() {
           <h5>Things I enjoy designing:</h5>
           <p>UX, UI, Web, Mobile, Apps, Logos</p>
           <h5>Design Tools:</h5>
-          <p>Balsamiq Mockups</p>
+          <p>Adobe XD</p>
+          <p>Adobe Illustrator</p>
+          <p>Adobe Photoshop</p>
+          <p>Blender</p>
           <p>Figma</p>
-          <p>Invision</p>
-          <p>Marvel</p>
-          <p>Pen & Paper</p>
           <p>Sketch</p>
-          <p>Webflow</p>
-          <p>Zeplin</p>
+          <p>GSuite</p>
+          <p>Slack</p>
         </div>
         <div className="divider" />
         <div className="column">
           <FrontEnd className="icon" />
           <h4>Developer</h4>
-          <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-          <h5>Things I enjoy designing:</h5>
-          <p>UX, UI, Web, Mobile, Apps, Logos</p>
-          <h5>Design Tools:</h5>
-          <p>Balsamiq Mockups</p>
-          <p>Figma</p>
-          <p>Invision</p>
-          <p>Marvel</p>
-          <p>Pen & Paper</p>
-          <p>Sketch</p>
-          <p>Webflow</p>
-          <p>Zeplin</p>
+          <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+          <h5>Languages I speak:</h5>
+          <p>TypeScript, JavaScript, HTML, CSS, Sass, Python, Solidity, Dart, SQL</p>
+          <h5>Dev Tools:</h5>
+          <p>ReactJS</p>
+          <p>Redux</p>
+          <p>Visual Code Studio</p>
+          <p>Github</p>
+          <p>Flutter</p>
+          <p>Firebase</p>
+          <p>Postman</p>
+          <p>MySQL</p>
+          <p>Node.js</p>
+          <p>ITerm</p>
         </div>
         <div className="divider" />
         <div className="column">
           <Mentor className="icon" />
           <h4>Consultant</h4>
-          <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-          <h5>Things I enjoy designing:</h5>
-          <p>UX, UI, Web, Mobile, Apps, Logos</p>
-          <h5>Design Tools:</h5>
-          <p>Balsamiq Mockups</p>
-          <p>Figma</p>
-          <p>Invision</p>
-          <p>Marvel</p>
-          <p>Pen & Paper</p>
-          <p>Sketch</p>
-          <p>Webflow</p>
-          <p>Zeplin</p>
+          <p>I genuinely care about people, and love helping fellow visionaries work on their craft.</p>
+          <h5>Experiences I draw from:</h5>
+          <p>Project Management, Freelancing, Logistics, Coding, UX/UI Design, Fundraising</p>
+          <h5>Career Stats:</h5>
+          <p>7.5 years experience</p>
+          <p>8 Websites Deployed</p>
+          <p>3 Non-Profits Started</p>
+          <p>20+ Projects Delivered</p>
+          <p>$1M+ Raised</p>
         </div>
       </div>
     </S.Introduction>
