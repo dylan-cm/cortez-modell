@@ -100,7 +100,7 @@ function Works() {
         <div className="grid-item">
           <img src={freeps} alt="FreePeoples.com" className="thumbnail" />
           <div className="overlay">
-            <h4>Bringing world music and rock n' roll to San Francisco for over 15 years.</h4>
+            <h3>Bringing world music and rock n' roll to San Francisco for over 15 years.</h3>
             <OutlinedButton onClick={() => window.open('www.freepeoples.com')} end={true} transparent>
               Visit Site
               <Chevron />
