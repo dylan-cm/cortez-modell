@@ -4,6 +4,8 @@ import * as Styles from '../styles'
 import OutlinedButton from '../atoms/OutlinedButton'
 import { ReactComponent as Logo } from '../assets/logo.svg'
 import { ReactComponent as GitHub } from '../assets/github.svg'
+import { ReactComponent as Linkedin } from '../assets/linkedin.svg'
+import { ReactComponent as Email } from '../assets/email.svg'
 
 const S: Styles.Component = Styles
 S.Footer = styled.div`
@@ -149,7 +151,7 @@ function Footer() {
       <div className="row">
         {/* TODO: add links */}
         <OutlinedButton
-          onClick={() => window.open('mailto:dylan@cortez-modell.com')}
+          onClick={() => window.open('https://github.com/wurst-case')}
           inverted
           icon
           className="spaced-out"
@@ -157,12 +159,12 @@ function Footer() {
           <GitHub />
         </OutlinedButton>
         <OutlinedButton
-          onClick={() => window.open('mailto:dylan@cortez-modell.com')}
+          onClick={() => window.open('https://www.linkedin.com/in/dylanmodell/')}
           inverted
           icon
           className="spaced-out"
         >
-          <GitHub />
+          <Linkedin />
         </OutlinedButton>
         <OutlinedButton
           onClick={() => window.open('mailto:dylan@cortez-modell.com')}
@@ -170,7 +172,7 @@ function Footer() {
           icon
           className="spaced-out"
         >
-          <GitHub />
+          <Email />
         </OutlinedButton>
       </div>
       <p>Made with {'\u{2665}'} by DMCDCM © 2020</p>

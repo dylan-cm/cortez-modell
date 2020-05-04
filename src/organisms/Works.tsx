@@ -101,7 +101,7 @@ function Works() {
           <img src={freeps} alt="FreePeoples.com" className="thumbnail" />
           <div className="overlay">
             <h3>Bringing world music and rock n' roll to San Francisco for over 15 years.</h3>
-            <OutlinedButton onClick={() => window.open('www.freepeoples.com')} end={true} transparent>
+            <OutlinedButton onClick={() => window.open('https://www.freepeoples.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
@@ -111,7 +111,7 @@ function Works() {
           <img src={runestone} alt="Rune-Stone.com" className="thumbnail" />
           <div className="overlay">
             <h3>Creative first gamers building high end tools for the League of Legends community.</h3>
-            <OutlinedButton onClick={() => window.open('www.rune-stone.com')} end={true} transparent>
+            <OutlinedButton onClick={() => window.open('https://www.rune-stone.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
@@ -121,7 +121,7 @@ function Works() {
           <img src={greenc} alt="GreenConsultants.com" className="thumbnail" />
           <div className="overlay">
             <h3>Green technology experts helping forward thinking companies for over 20 years.</h3>
-            <OutlinedButton onClick={() => window.open('www.greenconsultants.com')} end={true} transparent>
+            <OutlinedButton onClick={() => window.open('https://www.greenconsultants.com')} end={true} transparent>
               Visit Site
               <Chevron />
             </OutlinedButton>
@@ -131,9 +131,9 @@ function Works() {
       {/* Link to dribbble */}
       {/* TODO: link to my profile */}
       {/* TODO: link to my behance */}
-      <OutlinedButton onClick={() => window.open('www.google.com')} start>
+      <OutlinedButton onClick={() => window.open('https://www.github.com/wurst-case')} start>
         <GithubLogo />
-        See more on GitHub
+        See more on Github
       </OutlinedButton>
     </S.Works>
   )
