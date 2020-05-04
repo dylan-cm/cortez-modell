@@ -14,7 +14,6 @@ S.Hero = styled.div`
   align-items: stretch;
 
   min-height: Calc(100vh - 115px);
-    /* ${(props) => props.theme.layout.headerHeightDesktop}); */
 
   div {
     display: flex;
@@ -34,7 +33,7 @@ S.Hero = styled.div`
     font-weight: 300;
     margin: 0;
     margin-bottom: 48px;
-    font-family: 'ITC Avant Garde Gothic Pro', sans-serif
+    font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
   }
 
   div.bottomBar {
@@ -49,21 +48,21 @@ S.Hero = styled.div`
     height: 260px;
   }
 
-  div.hero-body{
+  div.hero-body {
     padding: 32px;
   }
 
-  .headshot{
+  .headshot {
     width: 240px;
   }
-  .pattern-wrapper{
+  .pattern-wrapper {
     margin: -10%;
     position: absolute;
     width: 110%;
     height: 110%;
     overflow: hidden;
   }
-  .pattern{
+  .pattern {
     position: absolute;
     width: 110%;
     height: 110%;
@@ -74,24 +73,23 @@ S.Hero = styled.div`
     fill: ${(props) => props.theme.color.primary};
   }
 
-
-
   @media screen and (max-width: 800px) {
-      .pattern, .pattern-wrapper{
-        display: none;
-      }
-      #hero-illustration{
-        max-width: 80%;
-        height: auto;
-      }
+    .pattern,
+    .pattern-wrapper {
+      display: none;
+    }
+    #hero-illustration {
+      max-width: 80%;
+      height: auto;
+    }
   }
   @media screen and (max-width: 500px) {
-    .headshot{
+    .headshot {
       max-width: 80%;
     }
   }
   @media screen and (max-width: 275px) {
-    h1{
+    h1 {
       font-size: 2rem;
     }
   }
