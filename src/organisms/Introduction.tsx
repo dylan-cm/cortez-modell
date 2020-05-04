@@ -14,6 +14,7 @@ S.Introduction = styled.div`
   align-items: center;
 
   min-height: 100vh;
+  width: 100vw;
 
   h2 {
     font-size: 2.25rem;
@@ -81,6 +82,10 @@ S.Introduction = styled.div`
     padding: 48px 48px;
     margin: 124px 16px;
 
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
     div.column {
       display: flex;
       flex-direction: column;
@@ -93,6 +98,12 @@ S.Introduction = styled.div`
     div.divider {
       width: 1px;
       background: #b3a9b0;
+
+      @media screen and (max-width: 800px) {
+        height: 1px;
+        width: 100%;
+        margin: 48px 0;
+      }
     }
   }
 

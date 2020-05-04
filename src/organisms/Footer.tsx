@@ -88,6 +88,9 @@ S.Footer = styled.div`
     @media screen and (max-width: 800px) {
       flex-direction: column;
       max-width: 600px;
+      .mobile-pad {
+        margin-bottom: 32px;
+      }
     }
   }
 
@@ -116,7 +119,7 @@ function Footer() {
       <div className="color-bar" />
       <div className="dark-card">
         <h1>Start a project</h1>
-        <p>
+        <p className="mobile-pad">
           Interested in working together?
           <br />
           Let's chat.
@@ -132,6 +135,7 @@ function Footer() {
         one day at a time.
       </h4>
       <div className="row">
+        {/* TODO: add links */}
         <OutlinedButton
           onClick={() => window.open('mailto:dylan@cortez-modell.com')}
           inverted

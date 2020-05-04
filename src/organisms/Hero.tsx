@@ -73,6 +73,18 @@ S.Hero = styled.div`
     background-size: 10%;
     fill: ${(props) => props.theme.color.primary};
   }
+
+
+
+  @media screen and (max-width: 800px) {
+      .pattern, .pattern-wrapper{
+        display: none;
+      }
+      #hero-illustration{
+        max-width: 80%;
+        height: auto;
+      }
+    }
 `
 
 function Hero() {

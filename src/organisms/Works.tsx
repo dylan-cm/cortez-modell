@@ -35,6 +35,11 @@ S.Works = styled.div`
     max-width: 1215px;
     box-sizing: border-box;
 
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      padding: 16px;
+    }
+
     .grid-item {
       position: relative;
       padding-top: 60%;
